@@ -50,6 +50,7 @@ export const testUserTemplate: User = {
   googleId: null,
   discordId: null,
   githubId: null,
+  isAdmin: false,
   createdAt: new Date(),
   updatedAt: new Date(),
 }

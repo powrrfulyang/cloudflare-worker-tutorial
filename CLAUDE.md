@@ -55,7 +55,7 @@ graph TD
     B --> H["zodSchemas - 验证模式"];
     B --> I["constants - 常量配置"];
     B --> J["utils - 工具函数"];
-    
+
     A --> K["prisma - 数据模型"];
     A --> L["migrations - 数据库迁移"];
     A --> M["tests - 测试目录"];
@@ -120,10 +120,8 @@ pnpm unit:test
 pnpm e2e:test
 
 # D1 数据库迁移
-pnpm d1:migrations:init          # 从 Prisma schema 生成 SQL
-pnpm d1:migrations:create-local  # 创建本地迁移
-pnpm d1:migrations:deploy-local  # 应用本地迁移
-pnpm d1:migrations:deploy-remote # 应用远程迁移
+pnpm d1:migrations:deploy-local  # 应用迁移到本地 D1
+pnpm d1:migrations:deploy-remote # 应用迁移到远程 D1 (Production)
 
 # Wrangler 登录
 pnpm login

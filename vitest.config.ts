@@ -10,7 +10,6 @@ export default defineConfig(async () => {
   return {
     plugins: [
       cloudflareTest({
-        isolatedStorage: true, // Use isolated storage for each worker, **important**
         wrangler: {
           configPath: './wrangler.toml',
         },
